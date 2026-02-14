@@ -2,39 +2,37 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# ZapRent : Instant Gadget Rentals 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: PixelSquad
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Balasoorya D A - Jain University, Kochi
+- Member 2: Aathira A S - Jain University, Kochi
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+ZapRent is a smart micro-rental platform that allows users to instantly rent essential gadgets like chargers, power banks, and earphones for short durations. It solves the common problem of forgetting gadgets by providing fast, affordable, and convenient access in places like colleges and public spaces. ZapRent promotes a sharing economy while reducing unnecessary electronic waste.
 
-### The Problem statement
-[What problem are you solving?]
+### The Problem Statement
+In today’s digital world, essential electronic gadgets like chargers, power banks, earphones, and adapters are a daily necessity. However, people often forget these items at home, especially in fast-paced environments like colleges, offices, libraries, and public spaces. When this happens, they are left with limited options - either borrow from someone, which may be inconvenient, or purchase a new gadget for temporary use, which is expensive and leads to unnecessary electronic waste. There is currently no efficient, affordable, and instant solution for short-term gadget emergencies.
 
 ### The Solution
-[How are you solving it?]
-
----
+ZapRent is a smart micro-rental web platform designed to provide instant access to essential electronic gadgets for short durations. Users can log in, check real-time gadget availability, select a rental duration, and securely rent the gadget when needed. By enabling temporary access instead of permanent ownership, ZapRent offers a cost-effective, convenient, and sustainable solution that promotes a sharing economy while reducing unnecessary electronic waste.
 
 ## Technical Details
 
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: HTML, CSS, JavaScript, PHP, SQL
+- Frameworks used: None
+- Libraries used: None
+- Tools used: VS Code, XAMPP (Apache & MySQL), Git, GitHub, phpMyAdmin
 
 **For Hardware:**
 - Main components: [List main components]
@@ -45,13 +43,17 @@
 
 ## Features
 
-List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+Feature 1: Secure User Authentication
+Users can register and log in securely to access the rental platform and track their bookings.
 
----
+Feature 2: Gadget Listing with Availability Status
+Users can view all available gadgets along with their current status (Available/Rented).
+
+Feature 3: Day-Based Rental Selection
+Users can choose the number of rental days as per their requirement. The system calculates the total rental cost automatically based on selected duration.
+
+Feature 4: Admin Management Panel
+Admin can add or remove gadgets, monitor rentals, manage users, and track overall revenue.
 
 ## Implementation
 
