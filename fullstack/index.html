@@ -1,0 +1,59 @@
+
+<?php
+include 'config.php';
+session_start();
+
+if (isset($_POST['login'])) {
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $pass = $_POST['password'];
+
+    // Database check for the user
+    $res = mysqli_query($conn, "SELECT * FROM users WHERE email='$email' AND password='$pass'");
+    if ($row = mysqli_fetch_assoc($res)) {
+        $_SESSION['user_id'] = $row['user_id'];
+        $_SESSION['email'] = $row['email'];
+        $_SESSION['role'] = $row['role'];
+
+        // Role-based redirection logic
+        if ($row['role'] == 'admin') header("Location: admin.php");
+        elseif ($row['role'] == 'delivery') header("Location: delivery.php");
+        else header("Location: order.php");
+        exit();
+    } else {
+        echo "<script>alert('Invalid Credentials! Check Gmail or Password.');</script>";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZapRent | Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-bg-pattern">
+    <div class="auth-card">
+        <div class="auth-header">
+            <h1>ZAP<span>RENT</span></h1>
+            <p>Premium Tech at your doorstep</p>
+        </div>
+        
+        <form method="POST">
+            <div class="input-field">
+                <label>Email Address</label>
+                <input type="email" name="email"  required>
+            </div>
+            
+            <div class="input-field">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="••••••••" required>
+            </div>
+            
+            <button type="submit" name="login" class="zap-primary-btn">Secure Login</button>
+        </form>
+        
+        
+    </div>
+</body>
+</html>
