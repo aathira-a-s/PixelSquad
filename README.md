@@ -157,8 +157,7 @@ Professional UI/UX: The interface uses a clean, modern aesthetic with consistent
 
 ## Team Contributions
 
-- Balasoorya D A : Frontend development using HTML, CSS, and JavaScript; UI design and responsiveness; integration of frontend with PHP backend; testing and debugging.
-- Aathira A S : Backend development using PHP; MySQL database design and management; authentication logic implementation; admin and delivery module development; deployment on InfinityFree.
-
+- Balasoorya D A : Backend development using PHP; MySQL database design and management; authentication logic implementation; admin and delivery module development; deployment on InfinityFree.
+- Aathira A S : Frontend development using HTML, CSS, and JavaScript; UI design and responsiveness; integration of frontend with PHP backend; testing and debugging.
 
 Made with ❤️ at TinkerHub
